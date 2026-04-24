@@ -43,6 +43,7 @@ body {
   font-style: italic;
   margin: 16px 0;
   color: #6b2737;
+  animation: pulseFade 3s ease-in-out infinite;
 }
 
 .invite-text {
@@ -409,6 +410,13 @@ footer {
   background: #ffe4c4;
 }
 
+/* Pulse fade keyframe */
+@keyframes pulseFade {
+  0%   { opacity: 1;    }
+  50%  { opacity: 0.3;  }
+  100% { opacity: 1;    }
+}
+
 /* ============================
    MOBILE STYLES — max 600px
    ============================ */
@@ -461,7 +469,7 @@ footer {
 
   /* ── Countdown ── */
   .countdown-section {
-    padding: 40px 16px;
+    padding: 30px 16px;
   }
   .countdown {
     gap: 12px;
@@ -471,7 +479,7 @@ footer {
     min-width: 70px;
   }
   .count-box span {
-    font-size: 36px;
+    font-size: 25px;
   }
   .count-box p {
     font-size: 10px;
