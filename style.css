@@ -14,7 +14,7 @@ body {
 /* Hero */
 .hero {
   background: url('photos/hero-bg.jpg') center/cover no-repeat;
-  padding: 80px 20px;
+  padding: 60px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -407,4 +407,36 @@ footer {
 
 .music-bar-btn:hover {
   background: #ffe4c4;
+}
+
+/* ====== MOBILE STYLES ====== */
+@media (max-width: 600px) {
+
+  /* Hero section */
+  .hero {
+    padding: 40px 16px;
+  }
+
+  /* White text box */
+  .hero-content {
+    padding: 24px 20px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Couple names */
+  .names {
+    font-size: 36px;
+  }
+
+  /* Small text above names */
+  .together {
+    font-size: 10px;
+  }
+
+  /* Invite text below names */
+  .invite-text {
+    font-size: 13px;
+  }
+
 }
